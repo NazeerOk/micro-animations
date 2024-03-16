@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import { Canvas } from "@react-three/fiber";
 import { Model } from "./HandModel";
-import { Center, OrbitControls} from "@react-three/drei";
+import { Center, OrbitControls } from "@react-three/drei";
 
 const RefreshToLoad = () => {
   return (
@@ -22,6 +22,5 @@ const RefreshToLoad = () => {
     </Canvas>
   );
 };
-
 
 export default RefreshToLoad;

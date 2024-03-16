@@ -6,13 +6,12 @@ export function Model(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/the_hand.glb");
 
-  const { actions,mixer } = useAnimations(animations, group);
+  const { actions, mixer } = useAnimations(animations, group);
 
   useEffect(() => {
-    // actions.Animation.play();
-    actions?.GrabHold?.play()
-  }, [mixer,actions]);
-  
+    actions?.GrabHold?.play();
+  }, [mixer, actions]);
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
